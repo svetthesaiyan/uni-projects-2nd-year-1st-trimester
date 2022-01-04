@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Web Programming (HTML, CSS, JS) (Lectures)/public/2021.10.06 Week 2 Homework.html&apos; to &apos;2021.10.06 Week 2 Homework Main Page.html&apos;" description="Rename resource &apos;2021.10.06 Week 2 Homework.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="public/2021.10.06 Week 2 Homework.html" name="2021.10.06 Week 2 Homework Main Page.html" stamp="1633788609937" updateReferences="true"/>
+</session>

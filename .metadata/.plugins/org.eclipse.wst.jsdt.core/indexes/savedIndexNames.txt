@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+S:\Eclipse\2nd Year, 1st Trimester\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1811244606.index
+473786906.index
+595929084.index
+2384655925.index
+3107489170.index
+52024377.index
+2607181520.index
+3718916696.index

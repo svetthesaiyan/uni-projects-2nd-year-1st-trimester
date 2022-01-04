@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2021.10.13 Week 3 Homework About Us Page</title>
+	
+<style>
+	h1 {text-align: center}
+	h2 {text-align: center; font-size:48px}
+</style>
+	
+</head>
+<body>
+	
+<h1><img src="https://galeonsunnybeach.com/wp-content/uploads/2015/07/logo-retina.png" alt="Galeon Residence & Spa Sunny Beach logo" height="350" width="400"></h1>
+<div class="YT Embed">
+	<h2><i>Take a tour around our hotel.</i><br>🤗</h2>
+	<center><iframe width="660" height="375" src="https://www.youtube.com/embed/bJaPz2QEF0U"></iframe></center>
+</div>
+<hr>
+<div>
+	<h2>Hotel profits during 2019</h2>
+	<center><canvas id="HotelProfits" width="1200" height="600" style="border:1px solid #000000;"></canvas></center>
+<script>
+	var c=document.getElementById("HotelProfits");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+ctx.moveTo(20, 200);
+ctx.bezierCurveTo(20, 100, 400, 690, 1040, 80);
+ctx.stroke();
+</script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Table in HTML vs Table in CSS</title>
+	<style>
+     	td {font-size:60px; font-weight:bold}
+		
+		.red, .green, .blue {width:50px; height:50px; float:left}
+		.red{background:red}
+		.green{background:green}
+		.blue{background: blue}
+		
+		.main
+		{
+			width:900px; height:900px; 
+			border-width:4px;
+			border-color:black; 
+			border-style:double; 
+			font-size:22px;
+            font-weight: bold;
+			margin:auto
+ 
+		}
+		.header
+		{
+			text-align:center;
+			border-width:4px;
+			border-color:black;
+			border-style:double;
+			border-left-width:0px;
+			border-right-width:0px;
+			border-top-width:0px;
+			height: 200px;
+		}
+ 
+		.side_left, .side_right
+		{
+			width:150px; height:700px;	
+ 
+		}
+		.side_left
+		{
+			float:left;
+		}
+		.side_right
+		{
+			float:right;
+			width:142px;
+		}
+		.main_center_part
+		{
+			width:600px; height:600px; 
+			border-width:4px; 
+			border-color:black; 
+			border-style:double;
+			border-top-width:0px;
+			float:left;
+		}
+		.bottom
+		{
+			width: 600px; height:96px;	
+			border-width:4px; 
+			border-color:black; 
+			border-style:double;
+			border-top-width:0px;
+			border-bottom-width:0px;
+			float:left;
+		}
+    </style>
+    
+	<script>
+		c=["red", "green", "blue"]; i=0;
+		function cc()
+		{
+			document.getElementById("top").setAttribute("bgcolor", c[i++]);
+			if(i>2)
+				i=0;
+		}
+	</script>
+</head>
+
+<body>
+	 <table border="1" width="900" height="900" align="center">
+        <tr>
+            <td align="center" colspan="3" height="200" id="top">900x200</td>
+		 </tr>
+		 <tr>
+            <td align="center" rowspan="2" width="150">4</td>
+            <td align="center"><a href="javascript:cc();">ЩРАК!</a></td>
+            <td align="center" rowspan="2" width="150">8</td>
+        </tr>
+        <tr>
+            <td align="center" height="100">9</td>
+        </tr>
+    </table>
+	
+	<!--Трябва да подредим 3те разноцветни блокчета под таблицата-->
+	<div class="red"></div>
+	<div class="green"></div>
+	<div class="blue"></div>
+	
+	<!--Трябва да направим същата таблица като горната, обаче от <div> елемeнти-->
+	
+		<h1 align = "center">Блоково представяне:</h1>
+ 
+		<div class = "main" align = "center" >
+ 
+			<div class = "header" >top - 900x200</div>
+			<div class = "side_left">left - width:150px; height:700px</div>
+			<div class = "main_center_part"> width:600px; height:600px</div>
+			<div class = "side_right">right - width:150px; height:700px</div>
+			<div class = "bottom"> bottom width:600px; height:100px</div>
+ 
+		</div>
+	
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+	
+<style>
+	body
+	{
+		background-color: #59A2E5;
+	}
+	
+	.centre
+	{
+		text-align: center;
+	}
+	
+	#heading
+	{
+		text-decoration: underline;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		text-shadow: 4px 1px red;
+		font-family: Monospace, Courier New;
+		font-size: 48px;
+	}
+	
+	#shape_question
+	{
+		font-family: Courier New;
+		font-weight: bold;
+		border: 4px dotted black;
+		border-radius: 15px;
+		box-shadow: 5px 10px #cc3300;
+	}
+	
+	#triangle
+	{
+		display: block;	
+  		width: 5%;
+		float: left;
+    	position: absolute;
+		top: 150px
+	}
+	
+	#click_button
+	{
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+		border: none;
+		background-color: none;
+		color: red;
+		border-radius: 5px;
+		padding: 10px 24px;
+		box-shadow: 0 6px 16px;
+	}
+</style>
+	
+<script>
+
+</script>
+</head>
+
+<body>
+<h1 class="centre" id="heading">Тест по уеб програмиране</h1>
+<div id="shape_question">
+	<p class="centre">Изберете фигурата, която е триизмерна:</p>
+	<img src="triangle.png" id="triangle">
+</div>
+<button id="click_button" type="button" onclick="myFunction()">Напред</button>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bob</title>
+<!-- Моята версия, която не работи изобщо.🤣 -->
+<style>
+.bob
+{
+	text-align:center; line-height:50px; color:yellow;
+	position:absolute; top:50px; left:50px;
+	width:50px; height:50px;
+	background:red;
+}
+</style>
+
+<script>
+ function bobmove(e)
+ {
+  d=e.keyCode;
+  
+ 	if(d==39)	// надясно
+ 		bob.style.left="50px";		// (parseInt(bob.style.left)+50)+"px";
+ 	else if(d=38)	// нагоре
+ 		bob.style.bottom="50px";
+ 	else if(d=37)	// наляво
+ 		bob.style.right="50px";
+ 	else if(d=40)	// надолу
+ 		bob.style.top="50px";	
+ } 
+
+// document.onkeydown=kbcode; `onkeydone` e `handler`
+addEventListener("keydown", kbcode);	
+addEventListener("keydown", bobmove);
+</script>
+</head>
+<body>
+
+<div class="bob" id="bob"></div>
+
+</body>
+</html>
